@@ -1,6 +1,6 @@
 # Patch for Thunderbird to handle broken OpenPGP messages
 
-This patch modifies the code that is supposed to detect broken OpenPGP messages. If you are getting blank messages with attachments named "encrypted.asc" and "PGPMIME version identification", and the MIME source also include a part of type "multipart/alternative", this patch will help.
+This patch modifies the code that is supposed to detect broken OpenPGP messages. If you are getting blank messages with attachments named "encrypted.asc" and "PGPMIME version identification", and the MIME source also includes a part of type "multipart/alternative", this patch will help.
 
 The patch utility should be applied at -p5 (that is, removing the 5 leading directory names), or just by manually editing two files in the archive "omni.ja" that comes with your Thunderbird distribution. You need to unpack "omni.ja" with 7-zip or Windows unzip feature, apply the patch and then zip it back. There are just a few lines to be modified in two files:
 
